@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">  </script>
+    <script id="entry-template" type="text/x-handlebars-template">
+    template content
+    </script>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/myBookings.css">
+</head>
+<body>
+  <div id="stick_page">
+    <nav class="hit navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/images/airport_logo.png" alt="" width="80" height="50" >
+            </a>
+
+            <div class="rel">
+                <h4 class="alice ">Devi Ahilyabai Holkar Airport</h4>
+                <h6 class="alice">INDORE</h6>
+            </div>
+
+          <div class="slide collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class=" nav-item">
+                <a class=" black nav-link " aria-current="page" href="profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="black nav-link " href="profile">My Bookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="black nav-link " href="login">Logout</a>
+              </li>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+
+
+
+
+		<div class="bg-image">
+
+		</div>
+		<div class="bg-text">
+			<br>
+			<br>
+			<h1 class="change">MY BOOKINGS</h1>
+			<br>
+			<br>
+			<% if(typeof email!="undefined"&& email){%>
+
+				<table>
+					<tr>
+						<td class=" inc" >TICKET ID</td>
+						<td class="inc">FLIGHT ID</td>
+						<td class="inc">NAME </td>
+						<td class="inc">GENDER</td>
+						<td class="inc">ARRIVAL</td>
+						<td class="inc">DEPARTURE</td>
+						<td class="inc">SEAT </td>
+						<td class="inc">CLASS</td>
+						<td class="inc">GATE </td>
+						<td class="inc">DATE OF TRAVEL</td>
+
+					</tr>
+					<h5 style="display: inline;"><% if(data.length){ for(var i=0;i < data.length ; i++){%>
+						<tr>
+
+
+					<td><%= data[i].ticket_id %>&nbsp;</td>
+						<td><%= data[i].flight_id %>&nbsp;</td>
+					<td><%= data[i].name %>&nbsp;</td>
+					<td><%= data[i].gender%>&nbsp;</td>
+					<td><%= data[i].arrival %>&nbsp;</td>
+
+					<td><%= data[i].departure %>&nbsp;</td>
+				<td>	<%= data[i].seat_no %>&nbsp;</td>
+				<td><%= data[i].class_type %>&nbsp;</td>
+					<td>	<%= data[i].gate_no %>&nbsp;</td>
+				<td><%= data[i].date %>&nbsp;</td>
+							</tr>
+						<% } %>
+						<% } %></h5>
+				</table>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<!-- form -->
+				<h2 class="change">ENTER DETAILS TO CANCEL YOUR BOOKING</h2>
+				<br>
+				<br>
+				<form  action="/mybook/myBookings" method="post">
+
+					<input class="chang" type="text" name="ticket_id" placeholder="ticket_id">
+					<br>
+
+					<input class="chang1"type="submit" placeholder=""="cancel ticket">
+				</form>
+
+		  <%}%>
+			<% if(typeof message!="undefined"&&message){ %><h1 class=" change alert mt-4" style="text-align: center;"><%=message%></h4><% } %>
+
+
+		</div>
+
+
+
+
+
+
+
+
+    <footer class="footer text-bg-dark pt-3 pb-3 ">
+        <span>Follow us on:</span>
+        <img class="small" src="/images/facebook.png" alt="">
+        <img class="small" src="/images/instagram.png" alt="">
+        <img class="small" src="/images/twitter.png" alt="">
+        <img class="small" src="/images/linkedin.png" alt="">
+    </footer>
+</body>

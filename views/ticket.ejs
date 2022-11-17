@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/ticket.css">
+  </head>
+  <body>
+
+    <div class="big">
+  	<a href="profile"><h4 class="u">RETURN TO HOME</h4></a>
+  	</div>
+
+
+      <% if(typeof flight_id!="undefined" && flight_id){%>
+
+
+
+
+        <div class="box">
+          <ul class="left">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <ul class="right">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="ticket">
+            <span class="airline"></span>
+            <span class="airline airlineslip"></span>
+            <span class="boarding"></span>
+            <div class="content">
+              <span class="jfk"><%= departure %>&nbsp </span>
+              <span class="plane"><?xml version="1.0" ?><svg clip-rule="evenodd" fill-rule="evenodd" height="60" width="60" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g stroke="#222"><line fill="none" stroke-linecap="round" stroke-width="30" x1="300" x2="55" y1="390" y2="390"/><path d="M98 325c-9 10 10 16 25 6l311-156c24-17 35-25 42-50 2-15-46-11-78-7-15 1-34 10-42 16l-56 35 1-1-169-31c-14-3-24-5-37-1-10 5-18 10-27 18l122 72c4 3 5 7 1 9l-44 27-75-15c-10-2-18-4-28 0-8 4-14 9-20 15l74 63z" fill="#222" stroke-linejoin="round" stroke-width="10"/></g></svg> </span>
+              <span class="sfo">  <%= arrival %> &nbsp</span>
+
+              <span class=" planeslip"><?xml version="1.0" ?><svg clip-rule="evenodd" fill-rule="evenodd" height="50" width="50" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g stroke="#222"><line fill="none" stroke-linecap="round" stroke-width="30" x1="300" x2="55" y1="390" y2="390"/><path d="M98 325c-9 10 10 16 25 6l311-156c24-17 35-25 42-50 2-15-46-11-78-7-15 1-34 10-42 16l-56 35 1-1-169-31c-14-3-24-5-37-1-10 5-18 10-27 18l122 72c4 3 5 7 1 9l-44 27-75-15c-10-2-18-4-28 0-8 4-14 9-20 15l74 63z" fill="#222" stroke-linejoin="round" stroke-width="10"/></g></svg></span>
+              <div class="sub-content">
+                <span class="watermark">Lufthansa</span>
+                <span class="name">PASSENGER NAME<br><span><%= name %></span></span>
+                <span class="flight">FLIGHT ID<br><span>  <%= flight_id %> </span></span>
+                <span class="gate">GATE<br><span>10</span></span>
+                <span class="seat">SEAT<br><span>  <%= seat_no %> </span></span>
+                <span class="boardingtime">DATE OF TRAVEL<br><span><%= date %>&nbsp; &nbsp</span></span>
+                <span> </span>
+                <span class="classs">CLASS<br><span><%= classs %></span></span>
+
+                 <span class="flight flightslip">FLIGHT ID<br><span><%= flight_id %></span></span>
+                  <span class="seat seatslip">SEAT<br><span><%= seat_no %> </span></span>
+                 <span class="name nameslip">PASSENGER NAME<br><span><%= name %></span></span>
+              </div>
+            </div>
+            <div class="barcode"></div>
+            <div class="barcode slip"></div>
+          </div>
+        </div>
+
+
+  <h1> CONGRATULATIONS,YOUR TICKET IS BOOKED!</h1>
+
+        <%}%>
+        <!-- footer -->
+        <div class="fo">
+        	<footer class="footer bg-dark pt-3 pb-3 ">
+        		<span class="k">Follow us on:</span>
+        		<img class="small" src="/images/facebook.png" alt="">
+        		<img class="small" src="/images/instagram.png" alt="">
+        		<img class="small" src="/images/twitter.png" alt="">
+        		<img class="small" src="/images/linkedin.png" alt="">
+        	</footer>
+        </div>
+
+
+  </body>
+</html>

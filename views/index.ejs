@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <script id="entry-template" type="text/x-handlebars-template">
+    template content
+    </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles.css">
+
+
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+          $("#stick_page").css({
+            "background-color": "#EEEEEE",
+            "top": "0"
+          }); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f😎
+          $(".alice").css("color", "#000");
+          $(".not").css({
+            "color": "#000",
+            "hover": "#6B728E"
+          });
+        } else {
+          $("#stick_page").css("background-color", "transparent"); // if not, change it back to transparent
+          $(".alice").css("color", "#fff");
+          $(".not").css({
+            "color": "#fff",
+            "hover": "#6B728E"
+          });
+        }
+      });
+    });
+  </script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald&family=Sacramento&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <div class="top">
+    <p class="black">Call us at : 7386420677</p>
+  </div>
+
+  <div id="stick_page">
+    <nav class="hit navbar navbar-expand-lg navbar-scroll ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/images/airport_logo.png" alt="" width="100" height="60">
+        </a>
+
+        <div class="rel">
+          <h4 class="alice ">Devi Ahilyabai Holkar Airport</h4>
+          <h6 class="alice">INDORE</h6>
+        </div>
+
+        <div class="slide collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class=" nav-link active" aria-current="page" href="index">
+                <h6 class="not">Home</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link active" href="login">
+                <h6 class="not">Login</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link active" href="shop">
+                <h6 class="not">Shop&Dine</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link active" href="transport">
+                <h6 class="not">Transport</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link active" href="flightcancellation">
+                <h6 class="not">FlightCancel</h6>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- carousel -->
+
+
+
+  <div id="carouselExampleFade" class="movedown carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="try carousel-item active">
+        <div class="x">
+          <h1 class="y">TRAVEL</h1>
+          <h5>That leaves memories !!</h5>
+        </div>
+      </div>
+      <div class="try1 carousel-item ">
+        <div class="gateway">
+          <h1 class="a">Gateway to Goodness</h1>
+          <h5>Let your dreams take flight !!</h5>
+        </div>
+      </div>
+      <div class="try2 carousel-item">
+        <div class="explore">
+          <h1 class="c">Explore</h1>
+          <h5>The beauty of INDORE!!</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+  <!-- cards -->
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mb-5">
+          <h1 class="display-4">DEVI AHILYABAI HOLKAR AIRPORT</h1>
+          <p class="lead">Let Your Dreams Fly !! </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card1 card text-white card-has-bg click-col" >
+            <img class="card-img d-none" src="/images/shopping.jpg" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="card-body">
+                <small class="card-meta mb-2"></small>
+                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Best Shopping Experience
+                  </a></h4>
+
+              </div>
+              <div class="card-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card2 card text-white card-has-bg click-col" >
+            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="card-body">
+                <small class="card-meta mb-2"></small>
+                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Unleash The Foodie
+                    </a></h4>
+
+              </div>
+              <div class="card-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-white card-has-bg click-col">
+            <img class="card-img d-none" src="" style="background-image:url(" images/spa.jpg")alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="card-body">
+                <small class="card-meta mb-2"></small>
+                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Unleash and Relax
+                    </a></h4>
+
+              </div>
+              <div class="card-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- div3 -->
+
+  <div class="booking container-fluid pt-5 pb-5 ">
+    <div class="row ">
+      <div class="col-lg-4 col-md-6">
+        <a class="anchor" href="login">
+          <h5> Passenger Login</h5>
+        </a>
+        <br>
+        <p class="white"> Arrival</p>
+        <p class="white">Departure</p>
+        <p class="white">Ticket Booking</p>
+        <p class="white">Cancellation</p>
+
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <a class="anchor" href="shop">
+          <h5>Shop&Dine</h5>
+        </a>
+        <br>
+        <p class="white">Shopping Directory</p>
+        <p class="white">Dining Directory</p>
+        <p class="white">Unwind and Relax</p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <a class="anchor" href="transport">
+          <h5> Transportation</h5>
+        </a>
+        <br>
+        <p class="white">Taxis and Car Rentals</p>
+        <p class="white">Metro/Airport Express</p>
+        <p class="white">Bus Transport </p>
+        <p class="white">Parking</p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer text-bg-dark pt-3 pb-3 ">
+    <span>Follow us on:</span>
+    <img class="small" src="/images/facebook.png" alt="">
+    <img class="small" src="/images/instagram.png" alt="">
+    <img class="small" src="/images/twitter.png" alt="">
+    <img class="small" src="/images/linkedin.png" alt="">
+  </footer>
+
+  <div></div>
+</body>
+
+</html>

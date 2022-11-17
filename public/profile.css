@@ -1,0 +1,38 @@
+.rel{
+    margin-right: 700px;
+}
+#stick_page{
+    overflow: hidden;
+    position: fixed;
+    background-color:cadetblue;
+    width: 100%;
+    top: 0;
+    z-index:99;
+
+}
+
+.alice{
+    color: aliceblue;
+}
+
+.hit{
+    height:65px;
+}
+
+a:hover{
+    color: aliceblue;
+}
+
+body{
+  background-image: url('https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1605590427165-3884d6aa6731%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZsaWdodHxlbnwwfHwwfHw%253D%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fflight&tbnid=mm0Kb8gUytKTxM&vet=12ahUKEwiT0tjq0Zz7AhVZjNgFHcsyDmgQMygJegUIARDyAQ..i&docid=uXOcojoDV_VJJM&w=1000&h=1333&q=flight%20images&client=safari&ved=2ahUKEwiT0tjq0Zz7AhVZjNgFHcsyDmgQMygJegUIARDyAQ');
+}
+
+.footer{
+    text-align: center;
+    padding: 20px auto 20px;
+}
+.small{
+    height: 20px;;
+}
+
+/*div*/

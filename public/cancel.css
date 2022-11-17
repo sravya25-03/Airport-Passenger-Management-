@@ -1,0 +1,67 @@
+.rel{
+    margin-right: 900px;
+}
+#stick_page{
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    z-index:99;
+    padding-top: 5px;
+
+}
+
+.alice{
+    color: #fff;
+}
+
+.hit{
+    height:65px;
+}
+.black{
+  color:white;
+}
+.black:hover{
+  color:#FFF38C;
+}
+
+a:hover{
+    color: aliceblue;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px auto 20px;
+}
+.small{
+    height: 20px;;
+}
+.bg-image{
+	background-image: url("/images/cov.jpg");
+  height:950px;
+	background-repeat: no-repeat;
+	background-size: cover;
+  transform:scale(1.01);
+	background-position: center;
+  border: 0px;
+  margin: 0;
+}
+
+.bg-text{
+  color:white;
+  position:absolute;
+  top:46%;
+	left:50%;
+	z-index:2;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.s{
+  font-size: 6rem;
+}

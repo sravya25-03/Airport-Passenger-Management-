@@ -1,0 +1,102 @@
+body{
+    background-color:#F9F5EB;
+}
+
+.rel{
+    margin-right: 900px;
+}
+#stick_page{
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    z-index:99;
+    padding-top: 5px;
+
+}
+
+.alice{
+    color: #fff;
+}
+
+.hit{
+    height:65px;
+}
+.black{
+  color:white;
+}
+.black:hover{
+  color:#FFF38C;
+}
+
+/*carousel*/
+
+.size{
+    height: 500px;
+}
+
+
+.geeks  {
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+
+
+}
+.geeks img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+    transform: scale(1.5);
+}
+
+.space{
+    margin: 30px auto 50px;
+}
+
+.one{
+    margin-bottom: 100px;
+}
+
+.three{
+    margin: 100px auto 100px;
+}
+
+.metro_two{
+    margin-left: 30px;
+}
+
+.parking_two{
+    margin-left: 30px;
+}
+
+.booking{
+  background-color: #CFD2CF;
+text-align: center;
+}
+.white{
+  color:black;
+}
+.anchor{
+  color:black;
+  text-decoration: underline;
+}
+.anchor:hover{
+  color:#483838;
+}
+
+
+/*footer*/
+
+.footer{
+    text-align: center;
+    padding: 20px auto 20px;
+}
+
+.small{
+    height: 20px;;
+}
